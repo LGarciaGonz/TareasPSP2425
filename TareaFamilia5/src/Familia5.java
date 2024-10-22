@@ -106,6 +106,7 @@ class Familia5 {
         try {
             // Ejecutar todas las tareas de múltiplos y obtener los resultados
             l_ListaResultados = l_Executor.invokeAll(l_ListaTareas);
+
             // Ejecutar todas las tareas de suma y obtener los resultados
             l_ListaResultados2 = l_Executor.invokeAll(l_ListaTareasSuma);
             l_Executor.shutdown(); // Apagar el ejecutor
@@ -123,7 +124,7 @@ class Familia5 {
             // Comparar las listas de resultados y mostrar los números que coinciden
             for (Integer l_Numero : l_Resultado) {
                 if (l_Resultado2.contains(l_Numero)) { // Si el número está en ambas listas
-                    System.out.println(l_Numero); // Imprimir el número
+                    System.out.println("⫸ " + l_Numero); // Imprimir el número
                 }
             }
 

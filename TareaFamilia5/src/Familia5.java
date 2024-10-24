@@ -44,7 +44,7 @@ class Familia5 {
                 l_NumeroMultiplo = a_Numero; // Asignar el número si es múltiplo de 5
             }
 
-            return l_NumeroMultiplo == 0 ? 0 : l_NumeroMultiplo; // Retornar 0 si no es múltiplo
+            return l_NumeroMultiplo; // Retornar 0 si no es múltiplo
         }
     }
 
@@ -78,7 +78,7 @@ class Familia5 {
                 l_Numero = a_Numero; // Asignar el número si la suma de sus dígitos es múltiplo de 5
             }
 
-            return l_Numero == 0 ? 0 : l_Numero; // Retornar 0 si no es múltiplo
+            return l_Numero; // Retornar 0 si no es múltiplo
         }
     }
 
